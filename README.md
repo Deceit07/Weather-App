@@ -1,2 +1,3 @@
 # Weather-App
-Creating a weather app 
+Creating a weather app
+Using html css js
