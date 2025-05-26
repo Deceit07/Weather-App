@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #e3f2fd;
+  background-color: #3e4448;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,16 @@ body {
   color: #fff;
   font-size: 14px;
 }
+
+body {
+  background: url('https://png.pngtree.com/thumb_back/fh260/background/20240716/pngtree-sun-shining-through-clouds-ideal-for-weather-forecast-graphics-image_16008018.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 
 
 

@@ -5,37 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background: url('https://img.freepik.com/free-photo/overcast-clouds-mountain-cityscape_23-2148182920.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+      background-size: cover;
+      align-items: center;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ffffff;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <div class="weather-container">
-    <div class="search-box">
-      <input type="text" placeholder="Search City..." />
-      <button>🔍</button>
-    </div>
 
-    <div class="weather-info">
-      <img src="https://img.icons8.com/ios/100/partly-cloudy-day--v1.png" alt="Weather Icon" />
-      <h1 class="temperature">31°C</h1>
-      <p class="description">Mostly Cloudy</p>
-      <h2 class="city">New Delhi</h2>
-      <p class="datetime">Thursday, 12:44 PM<br>22 May 2025</p>
-    </div>
+  <div class="main-content">
+    <div class="weather-container">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search City..." />
+        <button id="searchBtn">🔍</button>
+      </div>
 
-    <div class="weather-details">
-      <div class="detail-box">
-        <p>Wind</p>
-        <h3>6 km/h</h3>
-        <p>East</p>
+      <div class="weather-info">
+        <img id="weatherIcon" src="https://img.icons8.com/ios/100/partly-cloudy-day--v1.png" alt="Weather Icon" />
+        <h1 id="temperature">--°C</h1>
+        <p id="description">--</p>
+        <h2 id="cityName">City Name</h2>
+        <p id="datetime">--</p>
       </div>
-      <div class="detail-box">
-        <p>Humidity</p>
-        <h3>69%</h3>
-      </div>
-      <div class="detail-box">
-        <p>Feels Like</p>
-        <h3>34°C</h3>
+
+      <div class="weather-details">
+        <div class="detail-box"></div>
+        <div class="detail-box"></div>
+        <div class="detail-box"></div>
       </div>
     </div>
   </div>
+
+  <footer>
+    &copy; 2025 Raushan Kumar. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
